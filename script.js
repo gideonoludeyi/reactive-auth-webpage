@@ -1,6 +1,5 @@
 const { fromEvent, of } = rxjs;
-const { map, filter, tap, withLatestFrom, distinctUntilChanged } =
-    rxjs.operators;
+const { map, filter, tap, withLatestFrom } = rxjs.operators;
 const { isEmail } = validator;
 
 function getPasswordErrorState(text) {
