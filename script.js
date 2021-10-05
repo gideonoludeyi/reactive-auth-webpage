@@ -34,6 +34,7 @@ const password$ = fromEvent(password, 'input').pipe(
 
 // emits values of #email-input and #password-input when both are valid and #login-btn is clicked
 const login$ = fromEvent(loginBtn, 'click').pipe(
+    tap(e => e.preventDefault()),
     withLatestFrom(email$, password$),
     map(([_, email, password]) => ({ email, password })),
     filter(({ email, password }) => isEmail(email) && isValidPassword(password))
