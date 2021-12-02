@@ -1,3 +1,3 @@
-# Reactive Website
+# Authentication Website (rxjs practice)
 
-A mock website using reactive programming ([rxjs](https://rxjs.dev/guide/overview)) for event flows and user interactions.
+A fake website using reactive programming ([rxjs](https://rxjs.dev/guide/overview)) to build a login form.
